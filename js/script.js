@@ -1,6 +1,6 @@
 function homePageLoading() {
-    url = 'apiUrl';
-    elementID = 'idDeVotreElementHtml';
+    url = 'https://api.blockcypher.com/v1/btc/main';
+    elementID = 'https://karim-as.github.io/bitcoin/';
     fonctionRequeteApi(url, elementID);
 
     
