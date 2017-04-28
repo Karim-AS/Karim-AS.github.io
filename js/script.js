@@ -1,7 +1,8 @@
-window.homePageLoading = function() {
-    url = 'https://api.blockcypher.com/v1/btc/main';
-    elementID = 'Karim-AS.github.io/bitcoin/index.html';
-var xmlhttp = new XMLHttpRequest();
+function homePageLoading() {
+    url = 'apiUrl';
+    elementID = 'idDeVotreElementHtml';
+    fonctionRequeteApi(url, elementID);
+    var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = this.responseText;
@@ -10,5 +11,4 @@ xmlhttp.onreadystatechange = function() {
     }
 };
 xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
-xmlhttp.send();
-}
+xmlhttp.send();}
