@@ -8,7 +8,3 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
 xmlhttp.send();
-
-
-
-
